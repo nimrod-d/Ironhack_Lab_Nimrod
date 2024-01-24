@@ -1,16 +1,4 @@
-USE sakila;
-
-SELECT columns
-FROM table1
-INNER JOIN table2
-ON table1.column_name = table2.column_name;
-
-SELECT COUNT(city.city_id)
-FROM country 
-INNER JOIN city 
-USING(country_id)
-WHERE country.country = "Canada";
-
+# LAB JOINS
 # List the number of films per category. ( #film.title & category.name)
 SELECT cat.name, COUNT(f.film_id) as cat_count
 FROM category as cat
